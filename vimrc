@@ -82,7 +82,6 @@ set backspace=indent,eol,start  " Allows backspace on everything. Insert mode
 
 set history=200  " keep 200 lines of command line history
 set ruler  " show the cursor position all the time
-set showcmd	 " display incomplete commands
 set wildmenu  " display completion matches in a status line
 
 set ttimeout  " time out for key codes
@@ -91,7 +90,7 @@ set ttimeoutlen=100  " wait up to 100ms after Esc for special key
 set number  " View linenumbers
 set relativenumber  " View relative numbers
 set numberwidth=6  " Length of the shown numbers setted to 6
-set cursorline  " ???
+set cursorline  " Highlight the line where cursor is
 set scrolloff=10  " Keeps 10 lines when scroling on file
 
 set autoindent  " Enables autindentation 
@@ -105,8 +104,9 @@ set conceallevel=1  " Conceallevel
 set colorcolumn=110  " Displays a margin at 110 characters
 
 set title  " Displays the opened file path as terminal title
-set laststatus=2
-set noshowmode
+set laststatus=2 " Type of the status bar required for lightline
+set noshowmode  " Doesn't show the status bar
+set noshowcmd  " Doesn't show the command that is being tiped
 
 syntax on  " Enable syntax highlighting
 filetype plugin on  " Enables filetype detection
@@ -146,6 +146,7 @@ noremap <leader>w :w<ENTER>
 " Copy the slection on visual mode
 vnoremap <leader>y :'<,'>%w !xclip -i -sel c <cr>  
  
+
 " Copy the content of the whole file (normal mode)
 noremap <leader>Y :%w !xclip -i -sel c <cr>  
 
@@ -174,9 +175,8 @@ noremap <leader><c-t> :call Openterm()<cr>
 
 " Enable sonokai
 
-let g:sonokai_style = 'andromeda'
-let g:sonokai_enable_italic = 0
-let g:sonokai_disable_italic_comment = 1
+let g:sonokai_enable_italic = 1
+let g:sonokai_disable_italic_comment = 0
 
 colorscheme sonokai
 
