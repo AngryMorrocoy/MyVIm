@@ -124,7 +124,6 @@ au FileType cpp source ~/.vim/ftplugin/syntax/cpp.vim  " C++
 au FileType html call Start_emmet()  " Html
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
-
 " Nerdtree
 source ~/.vim/ftplugin/Plug_Config/NerdTree.vim
 
