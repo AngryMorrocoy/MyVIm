@@ -156,14 +156,14 @@ noremap <leader>v :r !xclip -o -sel c <cr>
 vnoremap <leader>¿ :call NERDComment('x', 'toggle') <cr>
 
 " Tab management
-noremap nt :tabn <ENTER>
-noremap pt :tabp <ENTER>
-noremap ct :tabclose <ENTER>
-noremap tt :tabnew <ENTER>
+noremap nt :tabn <cr> 
+noremap pt :tabp <cr> 
+noremap ct :tabclose <cr>
+noremap tt :tabnew <cr>
 
 " Buffers management
-noremap <leader>bn :bn <ENTER>
-noremap <leader>bp :bp <ENTER>
+map <c-n> :bn <cr> 
+map <c-p> :bp <cr> 
 
 " Closes the actual file
 noremap <leader><cr> :q <cr>
