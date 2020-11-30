@@ -1,17 +1,3 @@
-" An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2017 Sep 20
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
-" Get the defaults that most users want.
-
-
-" Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
   " Put these in an autocmd group, so that we can delete them easily.
@@ -63,7 +49,7 @@ function! Openterm()
 endfunc
 
 " Copy to clipboard the path of the file current file
-command! CopyFilePath silent :!echo "%:p" | xclip -i -sel c | ~/Utilities/refresh_vim.sh
+command! CopyFilePath silent :!echo "%:p" | xclip -i -sel c | ~/.vim/refresh_vim.sh
 
 " Setters
 
