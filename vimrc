@@ -37,7 +37,7 @@ function! Start_ycm()
     execute 'source ~/.vim/ftplugin/Plug_Config/Ycm.vim'
 endfunction
 
-function! Start_emmet() 
+function! Start_emmet()
     " Initializes emmet
     execute 'packadd emmet-vim'
 endfunction
@@ -48,8 +48,21 @@ function! Openterm()
     resize -8
 endfunc
 
-" Copy to clipboard the path of the file current file
+function! ToggleTrailingWhiteSpaces()
+    highlight ShowTrailingWhitespace ctermbg=Red guibg=Red
+    if ShowTrailingWhitespace#IsSet()
+        echo "Whitespaces turned off"
+        call ShowTrailingWhitespace#Set(0, 0)
+    else
+        echo "Whitespaces turned on"
+        call ShowTrailingWhitespace#Set(1, 0)
+    endif
+endfunc
+
+" Copy to clipboard the path of he file current file
 command! CopyFilePath silent :!echo "%:p" | xclip -i -sel c | ~/.vim/refresh_vim.sh
+" Toggle trailingwhitespaces show
+command! ToggleTrailingWhiteSpaces call ToggleTrailingWhiteSpaces()
 
 " Setters
 
@@ -74,14 +87,15 @@ set wildmenu  " display completion matches in a status line
 set ttimeout  " time out for key codes
 set ttimeoutlen=100  " wait up to 100ms after Esc for special key
 
+set smartindent  " Configures indentantion
+set autoindent  " Enables autoindentation
+set cindent  " Smarter autoindent
+
 set number  " View linenumbers
 set relativenumber  " View relative numbers
 set numberwidth=6  " Length of the shown numbers setted to 6
 set cursorline  " Highlight the line where cursor is
 set scrolloff=10  " Keeps 10 lines when scroling on file
-
-set smartindent
-set autoindent  " Enables autindentation 
 set encoding=utf-8  " Set default encoding to utf-8
 set shiftwidth=4  " Width of tabulation is 4 by default
 set tabstop=4  " ^
@@ -95,6 +109,8 @@ set title  " Displays the opened file path as terminal title
 set laststatus=2 " Type of the status bar required for lightline/airline
 set noshowmode  " Doesn't show the status bar
 set noshowcmd  " Doesn't show the command that is being tiped
+
+set completeopt=menuone  " Changes the way completion is showed
 
 syntax on  " Enable syntax highlighting
 filetype plugin on  " Enables filetype detection
@@ -138,14 +154,14 @@ noremap <leader>w :w<ENTER>
 " !COPY OR PASTE REQUIRES XCLIP 
 
 " Copy the slection on visual mode
-vnoremap <leader>y :'<,'>%w !xclip -i -sel c <cr>  
- 
+vnoremap <leader>y :'<,'>%w !xclip -i -sel c <cr>
+
 
 " Copy the content of the whole file (normal mode)
-noremap <leader>Y :%w !xclip -i -sel c <cr>  
+noremap <leader>Y :%w !xclip -i -sel c <cr>
 
 " Paste whatever is on clipboard
-noremap <leader>v :r !xclip -o -sel c <cr>  
+noremap <leader>v :r !xclip -o -sel c <cr>
 
 " Comment toggle VisualMode
 vnoremap <leader>¿ :call NERDComment('x', 'toggle') <cr>
@@ -166,6 +182,12 @@ noremap <leader>q<cr> :q! <cr>
 
 " Opens a terminal
 noremap <leader><c-t> :call Openterm()<cr>
+
+" Refresh vim
+noremap <F5> :silent !~/.vim/refresh_vim.sh <cr>
+
+" Toggles trailing whitespace
+nmap <leader>- :ToggleTrailingWhiteSpaces <cr>
 
 " Enable sonokai
 
