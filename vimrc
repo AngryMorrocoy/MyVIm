@@ -104,7 +104,7 @@ set conceallevel=1  " Conceallevel
 set colorcolumn=110  " Displays a margin at 110 characters
 
 set title  " Displays the opened file path as terminal title
-set laststatus=2 " Type of the status bar required for lightline
+set laststatus=2 " Type of the status bar required for lightline/airline
 set noshowmode  " Doesn't show the status bar
 set noshowcmd  " Doesn't show the command that is being tiped
 
@@ -132,6 +132,12 @@ source ~/.vim/ftplugin/Plug_Config/Fzf.vim
 
 " Matchup
 source ~/.vim/ftplugin/Plug_Config/Matchup.vim
+
+" CtrlP
+source ~/.vim/ftplugin/Plug_Config/CtrlP.vim
+
+" Airline
+source ~/.vim/ftplugin/Plug_Config/AirLine.vim
 
 " Rainbow brackets
 let g:rainbow_active = 1
@@ -179,8 +185,4 @@ let g:sonokai_enable_italic = 1
 let g:sonokai_disable_italic_comment = 0
 
 colorscheme sonokai
-
-let g:lightline= {   
-            \'colorscheme': 'PaperColor_dark' 
-            \}
 
