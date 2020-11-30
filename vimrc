@@ -70,6 +70,7 @@ command! CopyFilePath silent :!echo "%:p" | xclip -i -sel c | ~/Utilities/refres
 let mapleader=","  " Mapleader, for commands and stuff
 
 set nocompatible  " Disables compatibility with neovim
+set noswapfile
 
 set mouse-=a  " Disable mouse
 
