@@ -94,6 +94,7 @@ set numberwidth=6  " Length of the shown numbers setted to 6
 set cursorline  " Highlight the line where cursor is
 set scrolloff=10  " Keeps 10 lines when scroling on file
 
+set smartindent
 set autoindent  " Enables autindentation 
 set encoding=utf-8  " Set default encoding to utf-8
 set shiftwidth=4  " Width of tabulation is 4 by default
