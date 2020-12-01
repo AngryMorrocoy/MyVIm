@@ -89,7 +89,6 @@ set ttimeoutlen=100  " wait up to 100ms after Esc for special key
 
 set smartindent  " Configures indentantion
 set autoindent  " Enables autoindentation
-set cindent  " Smarter autoindent
 
 set number  " View linenumbers
 set relativenumber  " View relative numbers
@@ -151,7 +150,7 @@ let g:rainbow_active = 1
 map Q gq  " Don't use ex mode
 noremap <leader>w :w<ENTER>
 
-" !COPY OR PASTE REQUIRES XCLIP 
+" !COPY OR PASTE REQUIRES XCLIP
 
 " Copy the slection on visual mode
 vnoremap <leader>y :'<,'>%w !xclip -i -sel c <cr>
@@ -167,14 +166,14 @@ noremap <leader>v :r !xclip -o -sel c <cr>
 vnoremap <leader>¿ :call NERDComment('x', 'toggle') <cr>
 
 " Tab management
-noremap nt :tabn <cr> 
-noremap pt :tabp <cr> 
+noremap nt :tabn <cr>
+noremap pt :tabp <cr>
 noremap ct :tabclose <cr>
 noremap tt :tabnew <cr>
 
 " Buffers management
-map <c-n> :bn <cr> 
-map <c-p> :bp <cr> 
+map <c-n> :bn <cr>
+map <c-p> :bp <cr>
 
 " Closes the actual file
 noremap <leader><cr> :q <cr>
