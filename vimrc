@@ -68,6 +68,8 @@ command! ToggleTrailingWhiteSpaces call ToggleTrailingWhiteSpaces()
 
 let mapleader=","  " Mapleader, for commands and stuff
 
+set termguicolors
+
 set nocompatible  " Disables compatibility with neovim
 set noswapfile
 
@@ -142,6 +144,9 @@ source ~/.vim/ftplugin/Plug_Config/CtrlP.vim
 " Airline
 source ~/.vim/ftplugin/Plug_Config/AirLine.vim
 
+" Indentline
+source ~/.vim/ftplugin/Plug_Config/IndentLine.vim
+
 " Rainbow brackets
 let g:rainbow_active = 1
 
@@ -188,10 +193,9 @@ noremap <F5> :silent !~/.vim/refresh_vim.sh <cr>
 " Toggles trailing whitespace
 nmap <leader>- :ToggleTrailingWhiteSpaces <cr>
 
-" Enable sonokai
+" Enable ayu
 
-let g:sonokai_enable_italic = 1
-let g:sonokai_disable_italic_comment = 0
+let ayucolor="dark"
 
-colorscheme sonokai
+colorscheme ayu
 
