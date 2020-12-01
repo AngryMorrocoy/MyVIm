@@ -1,4 +1,4 @@
-set rtp+=~/.fzf  " Adds fzf to the runtimepath
+" set rtp+=~/.fzf  " Adds fzf to the runtimepath
 
 function Files(fromroot, hidden, bang)  " Function to search, needs optimization
     let oldConf = $FZF_DEFAULT_COMMAND
@@ -25,7 +25,7 @@ function Files(fromroot, hidden, bang)  " Function to search, needs optimization
 endfunc
 
 noremap <leader>f :call Files(0, 0, 0)<cr>
-noremap <leader>F :call Files(1, 0, 0)<cr> 
+noremap <leader>F :call Files(1, 0, 0)<cr>
 noremap <leader>hf :call Files(0, 1, 0) <cr>
 noremap <leader>hF :call Files(1, 1, 0) <cr>
 
