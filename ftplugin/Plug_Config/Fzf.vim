@@ -1,4 +1,4 @@
-" set rtp+=~/.fzf  " Adds fzf to the runtimepath
+set rtp+=~/.fzf  " Adds fzf to the runtimepath
 
 function Files(fromroot, hidden, bang)  " Function to search, needs optimization
     let oldConf = $FZF_DEFAULT_COMMAND

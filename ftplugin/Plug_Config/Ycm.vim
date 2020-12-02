@@ -1,5 +1,5 @@
 
-noremap <leader>.r :YcmCompleter RefactorRename 
+noremap <leader>.r :YcmCompleter RefactorRename
 noremap <leader>d :YcmCompleter GetDoc <cr>
 noremap <leader>g :tab YcmCompleter GoToDefinition <cr>
 noremap <leader>R :YcmCompleter GoToReferences <cr>
