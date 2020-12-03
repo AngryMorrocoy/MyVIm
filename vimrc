@@ -90,7 +90,9 @@ set ttimeout  " time out for key codes
 set ttimeoutlen=100  " wait up to 100ms after Esc for special key
 
 set smartindent  " Configures indentantion
-set autoindent  " Enables autoindentation
+set expandtab  " Tabulations are spaces
+set shiftwidth=4  " Width of tabulation is 4 by default
+set tabstop=4  " ^
 
 set number  " View linenumbers
 set relativenumber  " View relative numbers
@@ -98,9 +100,6 @@ set numberwidth=6  " Length of the shown numbers setted to 6
 set cursorline  " Highlight the line where cursor is
 set scrolloff=10  " Keeps 10 lines when scroling on file
 set encoding=utf-8  " Set default encoding to utf-8
-set shiftwidth=4  " Width of tabulation is 4 by default
-set tabstop=4  " ^
-set expandtab  " Tabulations are spaces
 
 set conceallevel=1  " Conceallevel
 
