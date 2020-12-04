@@ -114,7 +114,9 @@ au FileType typescript source ~/.vim/ftplugin/syntax/js.vim  " Typescript
 au FileType c source ~/.vim/ftplugin/syntax/c.vim  " C
 au FileType cpp source ~/.vim/ftplugin/syntax/cpp.vim  " C++
 
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+au FileType html source ~/.vim/ftplugin/syntax/html.vim " Html
+
+au FileType css source ~/.vim/ftplugin/syntax/css.vim
 
 " Coc
 source ~/.vim/ftplugin/Plug_Config/Coc.vim
