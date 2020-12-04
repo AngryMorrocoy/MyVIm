@@ -8,7 +8,3 @@ setlocal expandtab
 
 noremap <Leader>r :!clear && node '%' <Enter>
 
-" Start autocompletion
-
-execute 'call Start_ycm()'
-

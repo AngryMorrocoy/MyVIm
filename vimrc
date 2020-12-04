@@ -31,17 +31,6 @@ augroup END
 
 " Functions and commands
 
-function! Start_ycm()
-    " Initializes YouCompleteMe
-    execute 'packadd YouCompleteMe'
-    execute 'source ~/.vim/ftplugin/Plug_Config/Ycm.vim'
-endfunction
-
-function! Start_emmet()
-    " Initializes emmet
-    execute 'packadd emmet-vim'
-endfunction
-
 function! Openterm()
     " Opens a terminal
     belowright term zsh
@@ -125,8 +114,10 @@ au FileType typescript source ~/.vim/ftplugin/syntax/js.vim  " Typescript
 au FileType c source ~/.vim/ftplugin/syntax/c.vim  " C
 au FileType cpp source ~/.vim/ftplugin/syntax/cpp.vim  " C++
 
-au FileType html call Start_emmet()  " Html
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+
+" Coc
+source ~/.vim/ftplugin/Plug_Config/Coc.vim
 
 " Nerdtree
 source ~/.vim/ftplugin/Plug_Config/NerdTree.vim
@@ -149,48 +140,10 @@ source ~/.vim/ftplugin/Plug_Config/IndentLine.vim
 " Rainbow brackets
 let g:rainbow_active = 1
 
-" Keybindings
-
 map Q gq  " Don't use ex mode
-noremap <leader>w :w<ENTER>
 
-" !COPY OR PASTE REQUIRES XCLIP
-
-" Copy the slection on visual mode
-vnoremap <leader>y :'<,'>%w !xclip -i -sel c <cr>
-
-
-" Copy the content of the whole file (normal mode)
-noremap <leader>Y :%w !xclip -i -sel c <cr>
-
-" Paste whatever is on clipboard
-noremap <leader>v :r !xclip -o -sel c <cr>
-
-" Comment toggle VisualMode
-vnoremap <leader>¿ :call NERDComment('x', 'toggle') <cr>
-
-" Tab management
-noremap nt :tabn <cr>
-noremap pt :tabp <cr>
-noremap ct :tabclose <cr>
-noremap tt :tabnew <cr>
-
-" Buffers management
-map <c-n> :bn <cr>
-map <c-p> :bp <cr>
-
-" Closes the actual file
-noremap <leader><cr> :q <cr>
-noremap <leader>q<cr> :q! <cr>
-
-" Opens a terminal
-noremap <leader><c-t> :call Openterm()<cr>
-
-" Refresh vim
-noremap <F5> :silent !~/.vim/refresh_vim.sh <cr>
-
-" Toggles trailing whitespace
-nmap <leader>- :ToggleTrailingWhiteSpaces <cr>
+" Keymaps
+source ~/.vim/ftplugin/maps.vim
 
 " Enable ayu
 

@@ -9,7 +9,3 @@ setlocal smartindent
 noremap <Leader>r :!clear && python3 '%' <Enter>
 noremap <Leader>dr :!clear && python3 '%'
 
-" Charge YCM and configure it
-
-execute 'call Start_ycm()'
-

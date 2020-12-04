@@ -13,7 +13,7 @@ endfunction
 
 function! Com_run()
     silent execute ":!clear"
-    execute "call Compile()" 
+    execute "call Compile()"
     if v:shell_error == 0
         execute 'call Run()'
     else
@@ -26,8 +26,4 @@ endfunction
 noremap <Leader>r :call Run() <Enter>
 noremap <leader>c :call Compile() <cr>
 noremap <leader><leader>r :call Com_run() <cr>
-
-" Iniciar ycm
-
-execute 'call Start_ycm()'
 
