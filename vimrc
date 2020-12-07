@@ -149,7 +149,5 @@ source ~/.vim/ftplugin/maps.vim
 
 " Enable ayu
 
-let ayucolor="dark"
-
-colorscheme ayu
+colorscheme sonokai
 
