@@ -1,3 +1,3 @@
 " Change of default leader key
-map ff <Plug>(easymotion-prefix)
+map f <Plug>(easymotion-prefix)
 
