@@ -124,9 +124,6 @@ source ~/.vim/ftplugin/Plug_Config/Coc.vim
 " Nerdtree
 source ~/.vim/ftplugin/Plug_Config/NerdTree.vim
 
-" Fzf
-source ~/.vim/ftplugin/Plug_Config/Fzf.vim
-
 " Matchup
 source ~/.vim/ftplugin/Plug_Config/Matchup.vim
 
@@ -147,7 +144,7 @@ map Q gq  " Don't use ex mode
 " Keymaps
 source ~/.vim/ftplugin/maps.vim
 
-" Enable ayu
+" Colorscheme configuration
 
 colorscheme sonokai
 

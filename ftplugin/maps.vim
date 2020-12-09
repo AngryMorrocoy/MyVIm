@@ -21,10 +21,6 @@ noremap pt :tabp <cr>
 noremap ct :tabclose <cr>
 noremap tt :tabnew <cr>
 
-" Buffers management
-map <c-n> :bn <cr>
-map <c-p> :bp <cr>
-
 " Closes the actual file
 noremap <leader><cr> :q <cr>
 noremap <leader>q<cr> :q! <cr>
@@ -41,4 +37,8 @@ nmap <leader>- :ToggleTrailingWhiteSpaces <cr>
 " Coc
 nmap <silent> <leader>g :call CocAction("jumpDefinition") <cr>
 nmap <silent> <leader>R :call CocAction("jumpReferences") <cr>
+
+" CtrlP
+nmap <silent> <leader>F :CtrlP <cr>
+nmap <silent> <leader>f :CtrlPCurFile <cr>
 
