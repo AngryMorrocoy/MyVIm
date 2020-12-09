@@ -136,6 +136,9 @@ source ~/.vim/ftplugin/Plug_Config/AirLine.vim
 " Indentline
 source ~/.vim/ftplugin/Plug_Config/IndentLine.vim
 
+" EasyMotion
+source ~/.vim/ftplugin/Plug_Config/EasyMotion.vim
+
 " Rainbow brackets
 let g:rainbow_active = 1
 
