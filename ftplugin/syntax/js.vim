@@ -6,5 +6,5 @@ setlocal expandtab
 
 " Run command
 
-noremap <Leader>r :!clear && node '%' <Enter>
+noremap <Leader>r :!clear && deno run '%' <Enter>
 
