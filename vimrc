@@ -149,8 +149,8 @@ source ~/.vim/ftplugin/maps.vim
 
 " Colorscheme configuration
 
-let g:sonokai_style = 'maia'
-let g:sonokai_disable_italic_comment = 1
+let g:molokai_original = 1
+let g:rehash256 = 1
 
-colorscheme sonokai
+colorscheme molokai
 
