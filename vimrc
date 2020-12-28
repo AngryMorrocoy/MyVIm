@@ -116,7 +116,7 @@ au FileType cpp source ~/.vim/ftplugin/syntax/cpp.vim  " C++
 
 au FileType html source ~/.vim/ftplugin/syntax/html.vim " Html
 
-au FileType css source ~/.vim/ftplugin/syntax/css.vim
+au FileType css source ~/.vim/ftplugin/syntax/css.vim " Css
 
 " Coc
 source ~/.vim/ftplugin/Plug_Config/Coc.vim
@@ -149,6 +149,5 @@ source ~/.vim/ftplugin/maps.vim
 
 " Colorscheme configuration
 
-"let g:molokai_original = 1
+colorscheme ayu
 
-colorscheme afterglow
