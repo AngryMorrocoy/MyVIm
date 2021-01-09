@@ -110,6 +110,7 @@ au FileType python source ~/.vim/ftplugin/syntax/py.vim  " Python
 
 au FileType javascript source ~/.vim/ftplugin/syntax/js.vim  " Javascript
 au FileType typescript source ~/.vim/ftplugin/syntax/js.vim  " Typescript
+au FileType typescript source ~/.vim/ftplugin/syntax/json.vim  " Json
 
 au FileType c source ~/.vim/ftplugin/syntax/c.vim  " C
 au FileType cpp source ~/.vim/ftplugin/syntax/cpp.vim  " C++
@@ -118,8 +119,10 @@ au FileType html source ~/.vim/ftplugin/syntax/html.vim " Html
 
 au FileType css source ~/.vim/ftplugin/syntax/css.vim " Css
 
-" Coc
-source ~/.vim/ftplugin/Plug_Config/Coc.vim
+if version > 800  " Loads coc if not started as vi
+    packadd coc.nvim-release
+    source ~/.vim/ftplugin/Plug_Config/Coc.vim
+endif
 
 " Nerdtree
 source ~/.vim/ftplugin/Plug_Config/NerdTree.vim
@@ -149,5 +152,9 @@ source ~/.vim/ftplugin/maps.vim
 
 " Colorscheme configuration
 
-colorscheme ayu
+if version > 800
+    colorscheme ayu
+else
+    colorscheme koehler
+endif
 
