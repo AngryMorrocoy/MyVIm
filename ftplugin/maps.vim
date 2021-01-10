@@ -18,7 +18,7 @@ vnoremap <leader>¿ :call NERDComment('x', 'toggle') <cr>
 " Tab management
 noremap nt :tabn <cr>
 noremap pt :tabp <cr>
-noremap ct :tabclose <cr>
+noremap xt :tabclose <cr>
 noremap tt :tabnew <cr>
 
 " Closes the actual file
