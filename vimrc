@@ -119,9 +119,15 @@ au FileType html source ~/.vim/ftplugin/syntax/html.vim " Html
 
 au FileType css source ~/.vim/ftplugin/syntax/css.vim " Css
 
-if version > 800  " Loads coc if not started as vi
+if version > 800 " If not started as vi
+    " Loads coc
     packadd coc.nvim-release
     source ~/.vim/ftplugin/Plug_Config/Coc.vim
+    " Loads vim-devicons
+    packadd vim-devicons
+    " Loads IndentLine
+    packadd indentLine
+    source ~/.vim/ftplugin/Plug_Config/IndentLine.vim
 endif
 
 " Nerdtree
@@ -135,9 +141,6 @@ source ~/.vim/ftplugin/Plug_Config/CtrlP.vim
 
 " Airline
 source ~/.vim/ftplugin/Plug_Config/AirLine.vim
-
-" Indentline
-source ~/.vim/ftplugin/Plug_Config/IndentLine.vim
 
 " EasyMotion
 source ~/.vim/ftplugin/Plug_Config/EasyMotion.vim
