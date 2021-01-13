@@ -28,9 +28,6 @@ noremap <leader>q<cr> :q! <cr>
 " Opens a terminal
 noremap <leader><c-t> :call Openterm()<cr>
 
-" Refresh vim
-noremap <F5> :silent !~/.vim/refresh_vim.sh <cr>
-
 " Toggles trailing whitespace
 nmap <leader>- :ToggleTrailingWhiteSpaces <cr>
 
