@@ -7,6 +7,9 @@
         }
     },
 
+    "python.linting.enabled": false,
+    "python.linting.pylintEnabled": false,
+
     "tsserver.enableJavascript": true,
     "coc.preferences.jumpCommand": "tab drop"
 }

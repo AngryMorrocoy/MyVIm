@@ -161,3 +161,5 @@ else
     colorscheme koehler
 endif
 
+" Transparent background
+hi Normal guibg=NONE ctermbg=NONE
