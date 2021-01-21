@@ -1,3 +1,6 @@
+set runtimepath=~/.config/vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.config/vim/after
+set packpath=~/.config/vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.config/vim/after
+
 if has("autocmd")
 
   " Put these in an autocmd group, so that we can delete them easily.
@@ -49,7 +52,7 @@ function! ToggleTrailingWhiteSpaces()
 endfunc
 
 " Copy to clipboard the path of he file current file
-command! CopyFilePath silent :!echo "%:p" | xclip -i -sel c | ~/.vim/refresh_vim.sh
+command! CopyFilePath silent :!echo "%:p" | xclip -i -sel c | ~/.config/vim/refresh_vim.sh
 " Toggle trailingwhitespaces show
 command! ToggleTrailingWhiteSpaces call ToggleTrailingWhiteSpaces()
 
@@ -66,7 +69,7 @@ set mouse-=a  " Disable mouse
 
 set nobackup  " Chinguen a su madre los backups
 
-set undodir=~/.vim/undodir/  " Directory where undofiles will go
+set undodir=~/.config/vim/undodir/  " Directory where undofiles will go
 set undofile  " Activate the undofile
 
 set backspace=indent,eol,start  " Allows backspace on everything. Insert mode
@@ -106,44 +109,44 @@ filetype plugin on  " Enables filetype detection
 
 " Filetype definition
 
-au FileType python source ~/.vim/ftplugin/syntax/py.vim  " Python
+au FileType python source ~/.config/vim/ftplugin/syntax/py.vim  " Python
 
-au FileType javascript source ~/.vim/ftplugin/syntax/js.vim  " Javascript
-au FileType typescript source ~/.vim/ftplugin/syntax/js.vim  " Typescript
-au FileType typescript source ~/.vim/ftplugin/syntax/json.vim  " Json
+au FileType javascript source ~/.config/vim/ftplugin/syntax/js.vim  " Javascript
+au FileType typescript source ~/.config/vim/ftplugin/syntax/js.vim  " Typescript
+au FileType typescript source ~/.config/vim/ftplugin/syntax/json.vim  " Json
 
-au FileType c source ~/.vim/ftplugin/syntax/c.vim  " C
-au FileType cpp source ~/.vim/ftplugin/syntax/cpp.vim  " C++
+au FileType c source ~/.config/vim/ftplugin/syntax/c.vim  " C
+au FileType cpp source ~/.config/vim/ftplugin/syntax/cpp.vim  " C++
 
-au FileType html source ~/.vim/ftplugin/syntax/html.vim " Html
+au FileType html source ~/.config/vim/ftplugin/syntax/html.vim " Html
 
-au FileType css source ~/.vim/ftplugin/syntax/css.vim " Css
+au FileType css source ~/.config/vim/ftplugin/syntax/css.vim " Css
 
 if version > 800 " If not started as vi
     " Loads coc
     packadd coc.nvim-release
-    source ~/.vim/ftplugin/Plug_Config/Coc.vim
+    source ~/.config/vim/ftplugin/Plug_Config/Coc.vim
     " Loads vim-devicons
     packadd vim-devicons
     " Loads IndentLine
     packadd indentLine
-    source ~/.vim/ftplugin/Plug_Config/IndentLine.vim
+    source ~/.config/vim/ftplugin/Plug_Config/IndentLine.vim
 endif
 
 " Nerdtree
-source ~/.vim/ftplugin/Plug_Config/NerdTree.vim
+source ~/.config/vim/ftplugin/Plug_Config/NerdTree.vim
 
 " Matchup
-source ~/.vim/ftplugin/Plug_Config/Matchup.vim
+source ~/.config/vim/ftplugin/Plug_Config/Matchup.vim
 
 " CtrlP
-source ~/.vim/ftplugin/Plug_Config/CtrlP.vim
+source ~/.config/vim/ftplugin/Plug_Config/CtrlP.vim
 
 " Airline
-source ~/.vim/ftplugin/Plug_Config/AirLine.vim
+source ~/.config/vim/ftplugin/Plug_Config/AirLine.vim
 
 " EasyMotion
-source ~/.vim/ftplugin/Plug_Config/EasyMotion.vim
+source ~/.config/vim/ftplugin/Plug_Config/EasyMotion.vim
 
 " Rainbow brackets
 let g:rainbow_active = 1
@@ -151,7 +154,7 @@ let g:rainbow_active = 1
 map Q gq  " Don't use ex mode
 
 " Keymaps
-source ~/.vim/ftplugin/maps.vim
+source ~/.config/vim/ftplugin/maps.vim
 
 " Colorscheme configuration
 
