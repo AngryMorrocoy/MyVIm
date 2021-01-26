@@ -13,7 +13,7 @@ noremap <leader>Y :%w !xclip -i -sel c <cr>
 noremap <leader>v :r !xclip -o -sel c <cr>
 
 " Comment toggle VisualMode
-vnoremap <leader>¿ :call NERDComment('x', 'toggle') <cr>
+vnoremap <leader>l :call NERDComment('x', 'toggle') <cr>
 
 " Tab management
 noremap nt :tabn <cr>
