@@ -160,6 +160,7 @@ source ~/.config/vim/ftplugin/maps.vim
 
 if version > 800
     colorscheme ayu
+    colorscheme gruvbox
 else
     colorscheme koehler
 endif
