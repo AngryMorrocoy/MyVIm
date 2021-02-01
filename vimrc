@@ -36,7 +36,7 @@ augroup END
 
 function! Openterm()
     " Opens a terminal
-    belowright term fish
+    belowright term zsh
     resize -8
 endfunc
 

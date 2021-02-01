@@ -27,7 +27,7 @@ noremap <leader><cr> :q <cr>
 noremap <leader>q<cr> :q! <cr>
 
 " Opens a terminal
-noremap <leader><c-t> :call Openterm()<cr>
+noremap <leader>t :call Openterm()<cr>
 
 " Toggles trailing whitespace
 nmap <leader>- :ToggleTrailingWhiteSpaces <cr>

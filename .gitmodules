@@ -1,3 +1,6 @@
 [submodule "pack/plugins/start/gruvbox"]
 	path = pack/plugins/start/gruvbox
 	url = https://github.com/morhetz/gruvbox
+[submodule "pack/plugins/opt/vim-devicons"]
+	path = pack/plugins/opt/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons
