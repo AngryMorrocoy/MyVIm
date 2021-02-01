@@ -5,7 +5,6 @@ noremap <leader>w :w<ENTER>
 " Copy the slection on visual mode
 vnoremap <leader>y :'<,'>%w !xclip -i -sel c <cr>
 
-
 " Copy the content of the whole file (normal mode)
 noremap <leader>Y :%w !xclip -i -sel c <cr>
 
@@ -37,8 +36,17 @@ nmap <silent> <leader>g :call CocAction("jumpDefinition") <cr>
 nmap <silent> <leader>R :call CocAction("jumpReferences") <cr>
 nmap <leader>.r <Plug>(coc-rename)
 
-
 " CtrlP
 nmap <silent> <leader>F :CtrlP <cr>
 nmap <silent> <leader>f :CtrlPCurFile <cr>
 
+" Autoclosing
+
+inoremap (<cr> (<CR>)<C-c>O
+inoremap (c ()<C-c>i
+
+inoremap {<cr> {<CR>}<C-c>O
+inoremap {c {}<C-c>l
+
+inoremap [<cr> [<CR>]<C-c>O
+inoremap [c []<C-c>l
