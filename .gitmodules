@@ -4,3 +4,6 @@
 [submodule "pack/plugins/opt/vim-devicons"]
 	path = pack/plugins/opt/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons
+[submodule "pack/plugins/opt/indentLine"]
+	path = pack/plugins/opt/indentLine
+	url = https://github.com/Yggdroot/indentLine
