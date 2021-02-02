@@ -46,7 +46,7 @@ inoremap (<cr> (<CR>)<C-c>O
 inoremap (c ()<C-c>i
 
 inoremap {<cr> {<CR>}<C-c>O
-inoremap {c {}<C-c>l
+inoremap {c {}<C-c>i
 
 inoremap [<cr> [<CR>]<C-c>O
-inoremap [c []<C-c>l
+inoremap [c []<C-c>i
