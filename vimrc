@@ -81,6 +81,7 @@ set wildmenu  " display completion matches in a status line
 set ttimeout  " time out for key codes
 set ttimeoutlen=100  " wait up to 100ms after Esc for special key
 
+
 set smartindent  " Configures indentantion
 set expandtab  " Tabulations are spaces
 set shiftwidth=4  " Width of tabulation is 4 by default
@@ -133,6 +134,7 @@ if version > 800 " If not started as vi
     source ~/.config/vim/ftplugin/Plug_Config/IndentLine.vim
 endif
 
+
 " Nerdtree
 source ~/.config/vim/ftplugin/Plug_Config/NerdTree.vim
 
@@ -160,7 +162,6 @@ source ~/.config/vim/ftplugin/maps.vim
 
 if version > 800
     colorscheme ayu
-    colorscheme gruvbox
 else
     colorscheme koehler
 endif
