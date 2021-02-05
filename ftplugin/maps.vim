@@ -42,12 +42,20 @@ nmap <silent> <leader>f :CtrlPCurFile <cr>
 
 " Autoclosing
 
-inoremap (<cr> (<CR>)<C-c>O
+inoremap (\ (
+inoremap (<BS> <C-c>i
 inoremap ( ()<C-c>i
+inoremap (<cr> (<CR>)<C-c>O
+inoremap (; ();<C-c>hi
+inoremap (;<cr> (<CR>);<C-c>O
 
-inoremap {<cr> {<CR>}<C-c>O
+inoremap {\ {
 inoremap { {}<C-c>i
+inoremap {<cr> {<CR>}<C-c>O
+inoremap {<BS> <C-c>i
 
-inoremap [<cr> [<CR>]<C-c>O
+inoremap [\ [
 inoremap [ []<C-c>i
+inoremap [<cr> [<CR>]<C-c>O
+inoremap [<BS> <C-c>i
 
