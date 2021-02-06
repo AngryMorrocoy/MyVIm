@@ -52,7 +52,7 @@ function! ToggleTrailingWhiteSpaces()
 endfunc
 
 " Copy to clipboard the path of he file current file
-command! CopyFilePath silent :!echo "%:p" | xclip -i -sel c | ~/.config/vim/refresh_vim.sh
+command! CopyFilePath silent :!echo "%:p" | xclip -i -sel c
 " Toggle trailingwhitespaces show
 command! ToggleTrailingWhiteSpaces call ToggleTrailingWhiteSpaces()
 
@@ -60,10 +60,10 @@ command! ToggleTrailingWhiteSpaces call ToggleTrailingWhiteSpaces()
 
 let mapleader=","  " Mapleader, for commands and stuff
 
-set termguicolors
+set notermguicolors " Doesn't use the colors of the terminal
 
-set nocompatible  " Disables compatibility with neovim
-set noswapfile
+set nocompatible  " Disables compatibility with vi
+set noswapfile " Disable the swapfiles
 
 set mouse-=a  " Disable mouse
 
@@ -98,6 +98,7 @@ set conceallevel=1  " Conceallevel
 
 set colorcolumn=110  " Displays a margin at 110 characters
 
+set cmdheight=2
 set title  " Displays the opened file path as terminal title
 set laststatus=2 " Type of the status bar required for lightline/airline
 set noshowmode  " Doesn't show the status bar
@@ -161,10 +162,8 @@ source ~/.config/vim/ftplugin/maps.vim
 " Colorscheme configuration
 
 if version > 800
-    colorscheme ayu
+    colorscheme sonokai
 else
     colorscheme koehler
 endif
 
-" Transparent background
-hi Normal guibg=NONE ctermbg=NONE

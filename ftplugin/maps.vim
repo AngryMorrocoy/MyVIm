@@ -28,17 +28,14 @@ noremap <leader>q<cr> :q! <cr>
 " Opens a terminal
 noremap <leader>t :call Openterm()<cr>
 
-" Toggles trailing whitespace
-nmap <leader>- :ToggleTrailingWhiteSpaces <cr>
-
 " Coc
 nmap <silent> <leader>g :call CocAction("jumpDefinition") <cr>
 nmap <silent> <leader>R :call CocAction("jumpReferences") <cr>
 nmap <leader>.r <Plug>(coc-rename)
 
 " CtrlP
-nmap <silent> <leader>F :CtrlP <cr>
-nmap <silent> <leader>f :CtrlPCurFile <cr>
+nmap <silent> <leader>f :CtrlP <cr>
+nmap <silent> <leader>lf :CtrlPLine <cr>
 
 " Autoclosing
 
@@ -50,12 +47,17 @@ inoremap (; ();<C-c>hi
 inoremap (;<cr> (<CR>);<C-c>O
 
 inoremap {\ {
+inoremap {<BS> <C-c>i
 inoremap { {}<C-c>i
 inoremap {<cr> {<CR>}<C-c>O
-inoremap {<BS> <C-c>i
+inoremap {; {};<C-c>hi
+inoremap {;<cr> {<CR>};<C-c>O
 
 inoremap [\ [
+inoremap [<BS> <C-c>i
 inoremap [ []<C-c>i
 inoremap [<cr> [<CR>]<C-c>O
-inoremap [<BS> <C-c>i
+inoremap [, [],<C-c>hi
+inoremap [; [];<C-c>hi
+inoremap [;<cr> [<CR>];<C-c>O
 

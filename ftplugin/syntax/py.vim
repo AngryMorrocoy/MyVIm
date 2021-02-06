@@ -1,4 +1,4 @@
-" Indentacion config
+" Indentation config
 
 setlocal shiftwidth=4
 setlocal tabstop=4

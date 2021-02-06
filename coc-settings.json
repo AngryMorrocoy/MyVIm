@@ -6,7 +6,6 @@
             "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
         }
     },
-    "python.jediPath": "/usr/lib/python3.9/site-packages/",
     "tsserver.enableJavascript": true,
     "coc.preferences.jumpCommand": "tab drop"
 }
