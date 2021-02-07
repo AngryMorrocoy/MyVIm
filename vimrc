@@ -60,7 +60,7 @@ command! ToggleTrailingWhiteSpaces call ToggleTrailingWhiteSpaces()
 
 let mapleader=","  " Mapleader, for commands and stuff
 
-set notermguicolors " Doesn't use the colors of the terminal
+set termguicolors " Use the colors of the terminal
 
 set nocompatible  " Disables compatibility with vi
 set noswapfile " Disable the swapfiles
@@ -162,7 +162,8 @@ source ~/.config/vim/ftplugin/maps.vim
 " Colorscheme configuration
 
 if version > 800
-    colorscheme sonokai
+    let ayucolor="mirage"
+    colorscheme ayu
 else
     colorscheme koehler
 endif
