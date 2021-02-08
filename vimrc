@@ -89,7 +89,7 @@ set tabstop=4  " ^
 
 set number  " View linenumbers
 set relativenumber  " View relative numbers
-set numberwidth=6  " Length of the shown numbers setted to 6
+set numberwidth=3  " Length of the shown numbers
 set cursorline  " Highlight the line where cursor is
 set scrolloff=10  " Keeps 10 lines when scroling on file
 set encoding=utf-8  " Set default encoding to utf-8

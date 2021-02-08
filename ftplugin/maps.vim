@@ -34,7 +34,8 @@ nmap <silent> <leader>R :call CocAction("jumpReferences") <cr>
 nmap <leader>.r <Plug>(coc-rename)
 
 " CtrlP
-nmap <silent> <leader>f :CtrlP <cr>
+nmap <silent> <leader>f :CtrlPCurWD <cr>
+nmap <silent> <leader>F :CtrlP <cr>
 nmap <silent> <leader>lf :CtrlPLine <cr>
 
 " Autoclosing
@@ -45,6 +46,7 @@ inoremap ( ()<C-c>i
 inoremap (<cr> (<CR>)<C-c>O
 inoremap (; ();<C-c>hi
 inoremap (;<cr> (<CR>);<C-c>O
+inoremap (: ():<C-c>hi
 
 inoremap {\ {
 inoremap {<BS> <C-c>i
