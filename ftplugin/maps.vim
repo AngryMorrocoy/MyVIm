@@ -1,9 +1,9 @@
-noremap <leader>w :w<ENTER>
+noremap <leader>w :w<cr>
 
 " !COPY OR PASTE REQUIRES XCLIP
 
 " Copy the slection on visual mode
-vnoremap <leader>y :'<,'>%w !xclip -i -sel c <cr>
+vnoremap <leader>y :w !xclip -i -sel c <cr>
 
 " Copy the content of the whole file (normal mode)
 noremap <leader>Y :%w !xclip -i -sel c <cr>
@@ -16,9 +16,9 @@ vnoremap <leader>x :call NERDComment('x', 'toggle') <cr>
 noremap  <leader>x :call NERDComment('n', 'toggle') <cr>
 
 " Tab management
-noremap nt :tabn <cr>
-noremap pt :tabp <cr>
-noremap xt :tabclose <cr>
+noremap tp :tabn <cr>
+noremap tu :tabp <cr>
+noremap tw :tabclose <cr>
 noremap tt :tabnew <cr>
 
 " Closes the actual file
@@ -37,6 +37,17 @@ nmap <leader>.r <Plug>(coc-rename)
 nmap <silent> <leader>f :CtrlPCurWD <cr>
 nmap <silent> <leader>F :CtrlP <cr>
 nmap <silent> <leader>lf :CtrlPLine <cr>
+
+" Splits stuff
+
+" Smooth movement
+nnoremap <C-k> <C-w><C-k>
+nnoremap <C-j> <C-w><C-j>
+nnoremap <C-h> <C-w><C-h>
+nnoremap <C-l> <C-w><C-l>
+" Resizing
+nnoremap <C-w>0 <C-w>=
+
 
 " Autoclosing
 

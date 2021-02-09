@@ -81,7 +81,6 @@ set wildmenu  " display completion matches in a status line
 set ttimeout  " time out for key codes
 set ttimeoutlen=100  " wait up to 100ms after Esc for special key
 
-
 set smartindent  " Configures indentantion
 set expandtab  " Tabulations are spaces
 set shiftwidth=4  " Width of tabulation is 4 by default
