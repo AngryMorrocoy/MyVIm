@@ -59,6 +59,7 @@ command! ToggleTrailingWhiteSpaces call ToggleTrailingWhiteSpaces()
 " Setters
 
 let mapleader=","  " Mapleader, for commands and stuff
+set fillchars+=vert:¦  " Vertsplit character
 
 set termguicolors " Use the colors of the terminal
 
@@ -159,6 +160,8 @@ map Q gq  " Don't use ex mode
 source ~/.config/vim/ftplugin/maps.vim
 
 " Colorscheme configuration
+
+autocmd Colorscheme * highlight VertSplit guibg=NONE guifg=fg
 
 if version > 800
     let ayucolor="mirage"
