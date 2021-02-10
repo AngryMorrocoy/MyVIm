@@ -75,7 +75,7 @@ set undofile  " Activate the undofile
 
 set backspace=indent,eol,start  " Allows backspace on everything. Insert mode
 
-set history=200  " keep 200 lines of command line history
+set history=50  " keep 50 lines of command line history
 set ruler  " show the cursor position all the time
 set wildmenu  " display completion matches in a status line
 
@@ -98,7 +98,6 @@ set conceallevel=1  " Conceallevel
 
 set colorcolumn=110  " Displays a margin at 110 characters
 
-set cmdheight=2
 set title  " Displays the opened file path as terminal title
 set laststatus=2 " Type of the status bar required for lightline/airline
 set noshowmode  " Doesn't show the status bar
