@@ -29,14 +29,18 @@ noremap <leader>q<cr> :q! <cr>
 noremap <leader>t :call Openterm()<cr>
 
 " Coc
-nmap <silent> <leader>g :call CocAction("jumpDefinition") <cr>
-nmap <silent> <leader>R :call CocAction("jumpReferences") <cr>
+nmap <silent>   <leader>g :call CocAction("jumpDefinition") <cr>
+nmap <silent>   <leader>R :call CocAction("jumpReferences") <cr>
 nmap <leader>.r <Plug>(coc-rename)
 
 " CtrlP
 nmap <silent> <leader>f :CtrlPCurWD <cr>
 nmap <silent> <leader>F :CtrlP <cr>
 nmap <silent> <leader>lf :CtrlPLine <cr>
+
+" Scroll up the window
+
+nnoremap <C-q> <C-y>
 
 " Splits stuff
 
@@ -46,7 +50,11 @@ nnoremap <C-j> <C-w><C-j>
 nnoremap <C-h> <C-w><C-h>
 nnoremap <C-l> <C-w><C-l>
 " Resizing
-nnoremap <C-w>0 <C-w>=
+nnoremap <C-w>0    <C-w>=
+nnoremap <C-Right> 5<C-w><
+nnoremap <C-Left>  5<C-w>>
+nnoremap <C-Up>    5<C-w>+
+nnoremap <C-Down>  5<C-w>-
 
 
 " Autoclosing

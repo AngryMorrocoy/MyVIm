@@ -1,3 +1,10 @@
+" __  __ ____  _      __     ___
+"|  \/  |  _ \( )___  \ \   / (_)_ __ ___  _ __ ___
+"| |\/| | |_) |// __|  \ \ / /| | '_ ` _ \| '__/ __|
+"| |  | |  _ <  \__ \   \ V / | | | | | | | | | (__
+"|_|  |_|_| \_\ |___/    \_/  |_|_| |_| |_|_|  \___|
+
+" Moving vim to ~/.config/vim instead of ~/.vim
 set runtimepath=~/.config/vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.config/vim/after
 set packpath=~/.config/vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.config/vim/after
 
@@ -14,10 +21,6 @@ if has("autocmd")
 
 endif
 
-if has('syntax') && has('eval')
-  packadd! matchit
-endif
-
 augroup vimStartup
     au!
 
@@ -30,7 +33,10 @@ augroup vimStartup
 
 augroup END
 
-" MY CONFIGURATION
+" Fuck trailing whitespaces
+autocmd BufWritePre * %s/\s\+$//e
+" More clear split lines
+autocmd Colorscheme * highlight VertSplit guibg=NONE guifg=fg
 
 " Functions and commands
 
@@ -40,21 +46,8 @@ function! Openterm()
     resize -8
 endfunc
 
-function! ToggleTrailingWhiteSpaces()
-    highlight ShowTrailingWhitespace ctermbg=Red guibg=Red
-    if ShowTrailingWhitespace#IsSet()
-        echo "Whitespaces turned off"
-        call ShowTrailingWhitespace#Set(0, 0)
-    else
-        echo "Whitespaces turned on"
-        call ShowTrailingWhitespace#Set(1, 0)
-    endif
-endfunc
-
 " Copy to clipboard the path of he file current file
 command! CopyFilePath silent :!echo "%:p" | xclip -i -sel c
-" Toggle trailingwhitespaces show
-command! ToggleTrailingWhiteSpaces call ToggleTrailingWhiteSpaces()
 
 " Setters
 
@@ -159,8 +152,6 @@ map Q gq  " Don't use ex mode
 source ~/.config/vim/ftplugin/maps.vim
 
 " Colorscheme configuration
-
-autocmd Colorscheme * highlight VertSplit guibg=NONE guifg=fg
 
 if version > 800
     let ayucolor="mirage"
