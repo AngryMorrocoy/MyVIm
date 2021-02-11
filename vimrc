@@ -143,9 +143,6 @@ source ~/.config/vim/ftplugin/Plug_Config/AirLine.vim
 " EasyMotion
 source ~/.config/vim/ftplugin/Plug_Config/EasyMotion.vim
 
-" Rainbow brackets
-let g:rainbow_active = 1
-
 map Q gq  " Don't use ex mode
 
 " Keymaps
