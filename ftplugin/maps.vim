@@ -1,4 +1,8 @@
+" Saves the file
 noremap <leader>w :w<cr>
+" Fast indentation
+nnoremap > >>
+nnoremap < <<
 
 " !COPY OR PASTE REQUIRES XCLIP
 

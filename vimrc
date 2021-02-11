@@ -125,14 +125,12 @@ if version > 800 " If not started as vi
     " Loads IndentLine
     packadd indentLine
     source ~/.config/vim/ftplugin/Plug_Config/IndentLine.vim
+    " Matchup
+    source ~/.config/vim/ftplugin/Plug_Config/Matchup.vim
 endif
-
 
 " Nerdtree
 source ~/.config/vim/ftplugin/Plug_Config/NerdTree.vim
-
-" Matchup
-source ~/.config/vim/ftplugin/Plug_Config/Matchup.vim
 
 " CtrlP
 source ~/.config/vim/ftplugin/Plug_Config/CtrlP.vim
