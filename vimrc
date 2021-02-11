@@ -105,6 +105,7 @@ set number  " View linenumbers
 set relativenumber  " View relative numbers
 set numberwidth=3  " Length of the shown numbers
 set cursorline  " Highlight the line where cursor is
+set cursorlineopt=number " Only highlight the number of the line where the curosr is
 set scrolloff=10  " Keeps 10 lines when scroling on file
 set encoding=utf-8  " Set default encoding to utf-8
 
