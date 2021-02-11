@@ -80,6 +80,7 @@ set expandtab  " Tabulations are spaces
 set shiftwidth=4  " Width of tabulation is 4 by default
 set tabstop=4  " ^
 
+set showtabline=2 " Always shows the tabline
 set number  " View linenumbers
 set relativenumber  " View relative numbers
 set numberwidth=3  " Length of the shown numbers
@@ -125,7 +126,8 @@ if version > 800 " If not started as vi
     " Loads IndentLine
     packadd indentLine
     source ~/.config/vim/ftplugin/Plug_Config/IndentLine.vim
-    " Matchup
+    " Loads Matchup
+    packadd vim-matchup
     source ~/.config/vim/ftplugin/Plug_Config/Matchup.vim
 endif
 
