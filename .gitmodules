@@ -13,3 +13,6 @@
 [submodule "pack/plugins/opt/vim-matchup"]
 	path = pack/plugins/opt/vim-matchup
 	url = https://github.com/andymass/vim-matchup
+[submodule "pack/plugins/start/vim-polyglot"]
+	path = pack/plugins/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
