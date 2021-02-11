@@ -55,10 +55,10 @@ nnoremap <C-h> <C-w><C-h>
 nnoremap <C-l> <C-w><C-l>
 " Resizing
 nnoremap <C-w>0    <C-w>=
-nnoremap <C-Right> 5<C-w><
-nnoremap <C-Left>  5<C-w>>
-nnoremap <C-Up>    5<C-w>+
-nnoremap <C-Down>  5<C-w>-
+nnoremap <C-Right> <C-w><
+nnoremap <C-Left>  <C-w>>
+nnoremap <C-Up>    <C-w>+
+nnoremap <C-Down>  <C-w>-
 
 
 " Autoclosing

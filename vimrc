@@ -37,6 +37,10 @@ augroup END
 autocmd BufWritePre * %s/\s\+$//e
 " More clear split lines
 autocmd Colorscheme * highlight VertSplit guibg=NONE guifg=fg
+" Saves the colorscheme default guibg
+autocmd Colorscheme * let g:default_guibg=synIDattr(hlID("Normal"), "bg#")
+" Saves the colorscheme default ctermbg
+autocmd Colorscheme * let g:default_ctermbg=synIDattr(hlID("Normal"), "bg")
 
 " Functions and commands
 
@@ -46,8 +50,21 @@ function! Openterm()
     resize -8
 endfunc
 
+function! ToggleBackgroundTransparency()
+    " Toggles the background transparency
+    let actual_ctermbg = synIDattr(hlID("Normal"), "bg")
+    let actual_guibg = synIDattr(hlID("Normal"), "bg#")
+    if actual_ctermbg != "" && actual_guibg != ""
+        highlight Normal ctermbg=NONE guibg=NONE
+    else
+        execute 'highlight Normal guibg='.g:default_guibg
+    endif
+endf
+
 " Copy to clipboard the path of he file current file
 command! CopyFilePath silent :!echo "%:p" | xclip -i -sel c
+" Toggles the background transparency
+command! ToggleBackgroundTransparency call ToggleBackgroundTransparency()
 
 " Setters
 
@@ -74,6 +91,9 @@ set wildmenu  " display completion matches in a status line
 
 set ttimeout  " time out for key codes
 set ttimeoutlen=100  " wait up to 100ms after Esc for special key
+
+set splitright " When split the window, do it to the right
+set splitbelow " When split the window, do it below
 
 set smartindent  " Configures indentantion
 set expandtab  " Tabulations are spaces
