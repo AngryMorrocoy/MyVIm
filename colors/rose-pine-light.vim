@@ -1,9 +1,8 @@
 hi clear
-syntax reset
 let g:colors_name = "rose-pine-light"
 set background=light
 set t_Co=256
-hi Normal guifg=#26233a ctermbg=NONE guibg=NONE gui=NONE
+hi Normal guifg=#26233a guibg=NONE gui=NONE
 
 hi ErrorMsg guifg=#eb6f92 guibg=NONE
 hi WarningMsg guifg=#eb6f92 guibg=NONE

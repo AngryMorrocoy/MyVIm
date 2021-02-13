@@ -1,9 +1,8 @@
 hi clear
-syntax reset
 let g:colors_name = "rose-pine-dark"
 set background=dark
 set t_Co=256
-hi Normal guifg=#e0def4 ctermbg=NONE guibg=NONE gui=NONE
+hi Normal guifg=#e0def4 guibg=#26233A gui=NONE
 
 hi ErrorMsg guifg=#eb6f92 guibg=NONE
 hi WarningMsg guifg=#eb6f92 guibg=NONE
@@ -37,7 +36,7 @@ hi Todo guifg=#f6c177 guibg=NONE
 hi Special guifg=#f6c177 guibg=NONE
 hi Label guifg=#f6c177 guibg=NONE
 hi Delimiter guifg=#f6c177 guibg=NONE
-hi CursorLineNR guifg=#f6c177 guibg=NONE
+hi CursorLineNR guifg=#F6C177 guibg=NONE
 hi Define guifg=#f6c177 guibg=NONE
 hi MoreMsg guifg=#f6c177 guibg=NONE
 hi Tag guifg=#f6c177 guibg=NONE
@@ -67,13 +66,13 @@ hi Whitespace gui=NONE guifg=#26233a guibg=NONE
 hi SpecialComment guifg=#26233a gui=italic guibg=#191724
 hi StatusLineNC gui=NONE guibg=#31748f guifg=#e0def4
 hi Search guibg=#31748f guifg=NONE
-hi Title guifg=#e0def4
+hi Title guifg=#F6C177
 hi Pmenu guifg=#e0def4 guibg=#706e86
-hi StatusLine gui=bold guifg=#e0def4 guibg=#706e86
+hi StatusLine gui=bold guifg=#1B1929 guibg=#343050
 hi Comment guifg=#706e86 gui=italic
-hi CursorLine guibg=#706e86
+hi CursorLine guibg=#F6C177
 hi TabLineFill gui=NONE guibg=#706e86
 hi VertSplit gui=NONE guifg=#706e86 guibg=NONE
 hi Visual gui=NONE guibg=#706e86
-hi TabLine guifg=#5045c1 guibg=#706e86 gui=NONE
-hi LineNr guifg=#5045c1 guibg=NONE
+hi TabLine guifg=#DBC4F7 guibg=#706e86 gui=NONE
+hi LineNr guifg=#DBC4F7 guibg=NONE

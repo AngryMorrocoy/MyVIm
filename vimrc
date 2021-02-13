@@ -36,7 +36,7 @@ augroup END
 " Fuck trailing whitespaces
 autocmd BufWritePre * %s/\s\+$//e
 " More clear split lines
-autocmd Colorscheme * highlight VertSplit guibg=NONE guifg=fg
+autocmd Colorscheme * highlight VertSplit ctermbg=NONE guibg=NONE guifg=fg
 " Saves the colorscheme default guibg
 autocmd Colorscheme * let g:default_guibg=synIDattr(hlID("Normal"), "bg#")
 " Saves the colorscheme default ctermbg
