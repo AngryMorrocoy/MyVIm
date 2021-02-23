@@ -172,8 +172,10 @@ source ~/.config/vim/ftplugin/maps.vim
 " Colorscheme configuration
 
 if version > 800
-    let ayucolor="mirage"
-    colorscheme ayu
+    set bg=dark
+    let g:gruvbox_contrast_dark = "hard"
+    let g:gruvbox_invert_tabline = 1
+    colorscheme gruvbox
 else
     colorscheme koehler
 endif

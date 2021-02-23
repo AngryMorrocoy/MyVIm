@@ -1,5 +1,5 @@
 " Change of default leader key
-map f <Plug>(easymotion-prefix)
+map <Space> <Plug>(easymotion-prefix)
 " Search two characters
 nmap s <Plug>(easymotion-overwin-f)
 " Searchs

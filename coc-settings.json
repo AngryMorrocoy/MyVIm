@@ -3,9 +3,11 @@
         "clangd": {
             "command": "clangd",
             "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
-            "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
+            "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp", "cs"]
         }
     },
     "tsserver.enableJavascript": true,
-    "coc.preferences.jumpCommand": "tab drop"
+    "coc.preferences.jumpCommand": "tab drop",
+
+    "coc.source.OmniSharp.enable" : true
 }

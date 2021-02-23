@@ -7,5 +7,5 @@ let g:airline#extensions#branch#enabled=0
 
 let g:airline_powerline_fonts=0
 
-let g:airline_theme="dark"
+let g:airline_theme="gruvbox"
 

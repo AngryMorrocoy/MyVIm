@@ -60,7 +60,7 @@ hi Statement guifg=#ebbcba guibg=NONE
 hi Operator guifg=#ebbcba guibg=NONE
 hi cssAttr guifg=#ebbcba guibg=NONE
 
-hi SignColumn guifg=#eb6f92 guibg=NONE
+hi SignColumn guifg=#E0DEF4 guibg=NONE
 hi NonText guifg=#26233a guibg=NONE
 hi Whitespace gui=NONE guifg=#26233a guibg=NONE
 hi SpecialComment guifg=#26233a gui=italic guibg=#191724
@@ -76,3 +76,6 @@ hi VertSplit gui=NONE guifg=#706e86 guibg=NONE
 hi Visual gui=NONE guibg=#706e86
 hi TabLine guifg=#DBC4F7 guibg=#706e86 gui=NONE
 hi LineNr guifg=#DBC4F7 guibg=NONE
+
+hi ColorColumn ctermbg=NONE guibg=#E0DEF4
+
