@@ -1,6 +1,6 @@
 " Saves the file
 noremap <leader>w :w<cr>
-" Fast indentation
+" Faster indentation
 nnoremap > >>
 nnoremap < <<
 
@@ -64,6 +64,7 @@ nnoremap <C-Down>  <C-w>-
 " Autoclosing
 
 inoremap (\ (
+inoremap () ()<C-c>i
 inoremap (<BS> <C-c>i
 inoremap ( ()<C-c>i
 inoremap (<cr> (<CR>)<C-c>O
@@ -72,6 +73,7 @@ inoremap (;<cr> (<CR>);<C-c>O
 inoremap (: ():<C-c>hi
 
 inoremap {\ {
+inoremap {} {}<C-c>i
 inoremap {<BS> <C-c>i
 inoremap { {}<C-c>i
 inoremap {<cr> {<CR>}<C-c>O
@@ -79,6 +81,7 @@ inoremap {; {};<C-c>hi
 inoremap {;<cr> {<CR>};<C-c>O
 
 inoremap [\ [
+inoremap [] []<C-c>i
 inoremap [<BS> <C-c>i
 inoremap [ []<C-c>i
 inoremap [<cr> [<CR>]<C-c>O
