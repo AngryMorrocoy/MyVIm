@@ -175,9 +175,7 @@ source ~/.config/vim/ftplugin/maps.vim
 " Colorscheme configuration
 
 if version > 800
-    set bg=dark
-    let g:sonokai_style = 'atlantis'
-    colorscheme sonokai
+    source ~/.config/vim/theme.vim
 else
     colorscheme koehler
 endif
