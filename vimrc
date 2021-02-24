@@ -46,7 +46,7 @@ autocmd Colorscheme * let g:default_ctermbg=synIDattr(hlID("Normal"), "bg")
 
 function! Openterm()
     " Opens a terminal
-    belowright term zsh
+    belowright term
     resize -8
 endfunc
 
@@ -123,6 +123,8 @@ set completeopt=menuone  " Changes the way completion is showed
 syntax on  " Enable syntax highlighting
 filetype plugin on  " Enables filetype detection
 
+let g:rainbow_active = 1
+
 " Filetype definition
 
 au FileType python source ~/.config/vim/ftplugin/syntax/py.vim  " Python
@@ -135,6 +137,7 @@ au FileType c source ~/.config/vim/ftplugin/syntax/c.vim  " C
 au FileType cpp source ~/.config/vim/ftplugin/syntax/cpp.vim  " C++
 
 au FileType html source ~/.config/vim/ftplugin/syntax/html.vim " Html
+au FileType xml source ~/.config/vim/ftplugin/syntax/html.vim " Html
 
 au FileType css source ~/.config/vim/ftplugin/syntax/css.vim " Css
 
@@ -173,9 +176,8 @@ source ~/.config/vim/ftplugin/maps.vim
 
 if version > 800
     set bg=dark
-    let g:gruvbox_contrast_dark = "hard"
-    let g:gruvbox_invert_tabline = 1
-    colorscheme gruvbox
+    let g:sonokai_style = 'atlantis'
+    colorscheme sonokai
 else
     colorscheme koehler
 endif

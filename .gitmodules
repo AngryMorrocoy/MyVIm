@@ -16,3 +16,9 @@
 [submodule "pack/plugins/start/vim-polyglot"]
 	path = pack/plugins/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
+[submodule "pack/plugins/start/rainbow"]
+	path = pack/plugins/start/rainbow
+	url = https://github.com/luochen1990/rainbow
+[submodule "pack/plugins/start/omnisharp-vim"]
+	path = pack/plugins/start/omnisharp-vim
+	url = https://github.com/OmniSharp/omnisharp-vim
