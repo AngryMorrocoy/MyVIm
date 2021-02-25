@@ -4,5 +4,4 @@ setlocal expandtab
 
 set omnifunc=htmlcomplete#CompleteTags
 
-RainbowToggle
-
+RainbowToggleOff

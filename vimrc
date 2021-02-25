@@ -140,6 +140,7 @@ au FileType html source ~/.config/vim/ftplugin/syntax/html.vim " Html
 au FileType xml source ~/.config/vim/ftplugin/syntax/html.vim " Html
 
 au FileType css source ~/.config/vim/ftplugin/syntax/css.vim " Css
+au FileType cs source ~/.config/vim/ftplugin/syntax/cs.vim " Css
 
 if version > 800 " If not started as vi
     " Loads coc

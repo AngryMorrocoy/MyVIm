@@ -25,7 +25,7 @@ endfunction
 
 " Forma rapida de compilar y ejecutar
 
-noremap <Leader>r :call Run() <Enter>
-noremap <leader>c :call Compile() <cr>
-noremap <leader><leader>r :call Com_run() <cr>
+noremap <buffer> <Leader>r :call Run() <Enter>
+noremap <buffer> <leader>c :call Compile() <cr>
+noremap <buffer> <leader><leader>r :call Com_run() <cr>
 

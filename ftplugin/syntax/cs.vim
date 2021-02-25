@@ -21,9 +21,13 @@ function! Com_run()
     endif
 endfunction
 
-" Forma rapida de compilar y ejecutar
+" C# works with omnisharp, use omnisharp moves instead of coc
 
-noremap <buffer> <Leader>r :call Run() <Enter>
-noremap <buffer> <leader>c :call Compile() <cr>
-noremap <buffer> <leader><leader>r :call Com_run() <cr>
+nmap <buffer> <silent>   <leader>g :call CocAction("jumpDefinition") <cr>
+nmap <buffer> <silent>   <leader>R :call CocAction("jumpReferences") <cr>
+nmap <buffer> <leader>.r :OmnisharpRename
+
+"noremap <Leader>r :call Run() <Enter>
+"noremap <leader>c :call Compile() <cr>
+"noremap <leader><leader>r :call Com_run() <cr>
 

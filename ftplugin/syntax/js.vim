@@ -6,5 +6,5 @@ setlocal expandtab
 
 " Run command
 
-noremap <Leader>r :!clear; node '%' <cr>
+noremap <buffer> <Leader>r :!clear; node '%' <cr>
 

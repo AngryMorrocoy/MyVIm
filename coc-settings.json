@@ -7,7 +7,7 @@
         }
     },
     "tsserver.enableJavascript": true,
-    "coc.preferences.jumpCommand": "tab drop",
+    "coc.preferences.jumpCommand": "tab drop"
 
-    "coc.source.OmniSharp.enable" : true
+    //"coc.source.OmniSharp.enable" : true
 }
