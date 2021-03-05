@@ -100,6 +100,8 @@ set expandtab  " Tabulations are spaces
 set shiftwidth=4  " Width of tabulation is 4 by default
 set tabstop=4  " ^
 
+set ignorecase " Makes the search case insensitive
+
 set showtabline=2 " Always shows the tabline
 set number  " View linenumbers
 set relativenumber  " View relative numbers
