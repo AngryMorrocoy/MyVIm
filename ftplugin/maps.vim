@@ -20,8 +20,6 @@ vnoremap <leader>x :call NERDComment('x', 'toggle') <cr>
 noremap  <leader>x :call NERDComment('n', 'toggle') <cr>
 
 " Tab management
-noremap tp :tabn <cr>
-noremap tu :tabp <cr>
 noremap tw :tabclose <cr>
 noremap tt :tabnew <cr>
 
