@@ -62,7 +62,7 @@ function! ToggleBackgroundTransparency()
 endf
 
 " Copy to clipboard the path of he file current file
-command! CopyFilePath silent :!echo "%:p" | xclip -i -sel c
+command! CopyFilePath :!echo "%:p" | xclip -i -sel c
 " Toggles the background transparency
 command! ToggleBackgroundTransparency call ToggleBackgroundTransparency()
 
