@@ -8,6 +8,4 @@
     },
     "tsserver.enableJavascript": true,
     "coc.preferences.jumpCommand": "tab drop"
-
-    //"coc.source.OmniSharp.enable" : true
 }

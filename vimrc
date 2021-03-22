@@ -138,6 +138,8 @@ au FileType typescript source ~/.config/vim/ftplugin/syntax/json.vim  " Json
 au FileType c source ~/.config/vim/ftplugin/syntax/c.vim  " C
 au FileType cpp source ~/.config/vim/ftplugin/syntax/cpp.vim  " C++
 
+au FileType java source ~/.config/vim/ftplugin/syntax/java.vim  " C
+
 au FileType html source ~/.config/vim/ftplugin/syntax/html.vim " Html
 au FileType xml source ~/.config/vim/ftplugin/syntax/html.vim " Html
 
