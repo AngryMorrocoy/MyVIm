@@ -63,6 +63,7 @@ nnoremap <C-Down>  <C-w>-
 
 inoremap (\ (
 inoremap () ()<C-c>i
+inoremap (<Space> (<Space><Space>)<C-c>hi
 inoremap (<BS> <C-c>i
 inoremap ( ()<C-c>i
 inoremap (<cr> (<CR>)<C-c>O
@@ -72,6 +73,7 @@ inoremap (: ():<C-c>hi
 
 inoremap {\ {
 inoremap {} {}<C-c>i
+inoremap {<Space> {<Space><Space>}<C-c>hi
 inoremap {<BS> <C-c>i
 inoremap { {}<C-c>i
 inoremap {<cr> {<CR>}<C-c>O
@@ -80,6 +82,7 @@ inoremap {;<cr> {<CR>};<C-c>O
 
 inoremap [\ [
 inoremap [] []<C-c>i
+inoremap [<Space> [<Space><Space>]<C-c>hi
 inoremap [<BS> <C-c>i
 inoremap [ []<C-c>i
 inoremap [<cr> [<CR>]<C-c>O
