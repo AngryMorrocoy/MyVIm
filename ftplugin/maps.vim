@@ -34,6 +34,8 @@ noremap <leader>t :call Openterm()<cr>
 nmap <silent>   <leader>g :call CocAction("jumpDefinition") <cr>
 nmap <silent>   <leader>R :call CocAction("jumpReferences") <cr>
 nmap <leader>.r <Plug>(coc-rename)
+nmap <leader>s :CocSearch
+
 
 " CtrlP
 nmap <silent> <leader>f :CtrlPCurWD <cr>
